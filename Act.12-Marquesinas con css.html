@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marquesinas con CSS</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        text-align: center;
+        margin: 20px;
+    }
+
+    h1, h2{
+        color: #003366;
+    }
+
+    marquee{
+        padding: 12px;
+        border-radius: 10px;
+        margin: 15px auto;
+        width: 80%;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .horizontal{
+        background: #4CAF50;
+        color: white;
+    }
+
+    .vertical{
+        background: lightblue;
+        color: #003366;
+        height: 120px;
+    }
+
+    .rebote{
+        background: orange;
+        color: white;
+        border: 3px solid darkorange;
+    }
+
+    .imagenes{
+        background: white;
+        border: 2px solid #ccc;
+        padding: 20px;
+    }
+
+    .imagenes img{
+        width: 150px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Marquesina horizontal</h1>
+<marquee class="horizontal">
+    Marquesina de izquierda a derecha
+</marquee>
+
+<h1>Marquesina horizontal inversa</h1>
+<marquee class="horizontal" direction="right">
+    Marquesina de derecha a izquierda
+</marquee>
+
+<h2>Marquesina vertical</h2>
+<marquee class="vertical" direction="up">
+    Marquesina que sube <br>
+    Texto 1 <br>
+    Texto 2 <br>
+    Texto 3
+</marquee>
+
+<h2>Marquesina vertical</h2>
+<marquee class="vertical" direction="down">
+    Marquesina que baja <br>
+    Texto 1 <br>
+    Texto 2 <br>
+    Texto 3
+</marquee>
+
+<h2>Marquesina con rebote</h2>
+<marquee class="rebote" behavior="alternate" scrollamount="20">
+    Marquesina que rebota en las orillas
+</marquee>
+
+<div class="imagenes">
+    <h2>Marquesina con imágenes</h2>
+
+    <marquee behavior="alternate">
+        <div>
+            <h3>Víctor Mendívil</h3>
+            <img src="VictorMendivil.jpg" alt="Víctor Mendívil">
+        </div>
+    </marquee>
+</div>
+
+</body>
+</html>
